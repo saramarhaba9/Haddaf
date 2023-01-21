@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane id="AnchorPane" fx:id="an" onKeyPressed="#enter" prefHeight="660.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="660.0" fitWidth="393.0" onMouseClicked="#keycl" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@im/ml33b.jpg" />
+         </image>
+      </ImageView>
+      <MediaView fx:id="audio" fitHeight="200.0" fitWidth="200.0" layoutX="86.0" layoutY="366.0" onMouseMoved="#newVoice" visible="false" />
+    </children>
+</AnchorPane>

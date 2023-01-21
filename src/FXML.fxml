@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AboutUsController">
+   <children>
+      <ImageView fitHeight="668.0" fitWidth="380.0">
+         <image>
+            <Image url="@im/ml3b.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="-2.0" prefHeight="660.0" prefWidth="380.0" spacing="15.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#045225" height="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="386.0" />
+            <ImageView fx:id="back" fitHeight="35.0" fitWidth="40.0" layoutX="30.0" layoutY="40.0" onMouseClicked="#back" preserveRatio="true" VBox.vgrow="NEVER">
+               <image>
+                  <Image url="@im/back.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="28.0" right="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#9bbfaa89" height="32.0" stroke="#045225" strokeType="INSIDE" width="220.0" />
+                  <Text fill="#045225" strokeType="OUTSIDE" strokeWidth="0.0" text="من نحن" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="172.0" stroke="#9bc0ab" strokeType="INSIDE" strokeWidth="8.0" width="304.0" />
+                  <VBox alignment="TOP_CENTER" prefHeight="160.0" prefWidth="320.0" spacing="10.0">
+                     <children>
+                        <Text fill="#045225" strokeType="OUTSIDE" strokeWidth="0.0" text="هداف" textAlignment="RIGHT" underline="true" wrappingWidth="286.515625">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#0000009e" strokeType="OUTSIDE" strokeWidth="0.0" text="هو تطبيق يتيح لك حجز أحد الملاعب المتواجدة في بعض احياء مكة بالوقت الذي تريده مع فرصة حجز مبارة خاصة في حالة لديك فريق متكامل أو اللعب مع أحد الفرق المتاحة الغير المكتملة   " textAlignment="RIGHT" wrappingWidth="286.515625">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#9bbfaa89" height="32.0" stroke="#045225" strokeType="INSIDE" width="220.0" />
+                  <Text fill="#045225" strokeType="OUTSIDE" strokeWidth="0.0" text="مطورين التطبيق">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="172.0" stroke="#9bc0ab" strokeType="INSIDE" strokeWidth="8.0" width="304.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fill="#000000b3" strokeType="OUTSIDE" strokeWidth="0.0" text="سحر سيام" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font></Text>
+                        <Text fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="منار الربيعي" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font></Text>
+                        <Text fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="سارة مرحبا" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font></Text>
+                        <Text fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="جمانة باجحلان" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font></Text>
+                        <Text fill="#000000b2" strokeType="OUTSIDE" strokeWidth="0.0" text="حنين الزهراني" textAlignment="RIGHT">
+                           <font>
+                              <Font name="Gadugi" size="18.0" />
+                           </font></Text>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#9bbfaa89" height="39.0" stroke="#045225" strokeType="INSIDE" width="243.0" />
+                  <Text fill="#045225" strokeType="OUTSIDE" strokeWidth="0.0" text="حسابات التواصل الاجتماعي" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="40.0" arcWidth="40.0" fill="WHITE" height="55.0" stroke="#045225" strokeType="INSIDE" width="243.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+                     <children>
+                        <ImageView>
+                           <image>
+                              <Image url="@im/instagram.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView>
+                           <image>
+                              <Image url="@im/twitter.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView>
+                           <image>
+                              <Image url="@im/snapchat.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets bottom="60.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

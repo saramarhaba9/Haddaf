@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="sc" prefHeight="660.0" prefWidth="375.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditController">
+   <children>
+      <Pane onKeyPressed="#enter" prefHeight="660.0" prefWidth="375.0">
+         <children>
+            <ImageView fitHeight="698.0" fitWidth="375.0" layoutX="-1.0" onKeyPressed="#enter" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@im/ml3b.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="94.0" fitWidth="103.0" layoutX="139.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@im/loin.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#7fc198" height="386.0" layoutX="59.0" layoutY="181.0" stroke="#7fc198" strokeType="INSIDE" style="-fx-opacity: 0.5;" width="255.0" />
+            <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="181.0" lineSpacing="10.0" prefHeight="27.0" prefWidth="261.0" text="التعديل" textFill="#435640">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="back" fitHeight="35.0" fitWidth="40.0" layoutX="30.0" layoutY="40.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@im/back.png" />
+               </image>
+            </ImageView>
+            <Line endX="263.0" layoutX="112.0" layoutY="5.0" startX="-112.0" stroke="#045225" strokeWidth="10.0" />
+            <Button fx:id="buEntery" layoutX="112.0" layoutY="510.0" mnemonicParsing="false" onAction="#change" onMouseEntered="#hover" onMouseExited="#realese" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: #1C7947;" text="تغيير" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField id="textf2" fx:id="name1" layoutX="105.0" layoutY="270.0" />
+            <TextField id="textf3" fx:id="number" layoutX="105.0" layoutY="330.0" />
+            <TextField id="textf4" fx:id="level1" editable="false" layoutX="105.0" layoutY="384.0" />
+            <TextField id="textf1" fx:id="email" editable="false" layoutX="105.0" layoutY="214.0" />
+            <RadioButton fx:id="top" layoutX="88.0" layoutY="434.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="خبيـر">
+               <toggleGroup>
+                  <ToggleGroup fx:id="level" />
+               </toggleGroup>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sec" layoutX="156.0" layoutY="434.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="متـمكن" toggleGroup="$level">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="first" layoutX="233.0" layoutY="434.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" text="مبتدئ" toggleGroup="$level">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <Label fx:id="msg" layoutX="91.0" layoutY="475.0" prefHeight="17.0" prefWidth="193.0" textFill="#ed3e35" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
